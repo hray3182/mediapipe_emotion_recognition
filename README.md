@@ -37,6 +37,9 @@ source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
+4. 下載 MediaPipe 模型：
+從 [MediaPipe Face Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker) 下載所需的模型文件，並放置在專案根目錄下。
+
 ## 資料處理與訓練流程
 
 1. 資料預處理：
@@ -74,18 +77,12 @@ python test_mesh_visualization.py
 - `models/`: 存放訓練好的模型
 - `dataset/`: 原始訓練資料集
 - `extracted_blendshapes/`: 提取的特徵資料
+- `face_landmarker.task`: MediaPipe 人臉特徵點模型文件
 
-## 依賴套件
+## 相關資源
 
-主要依賴套件包括：
-- mediapipe
-- tensorflow
-- opencv-python
-- numpy
-- scikit-learn
-- matplotlib
-
-詳細的依賴套件清單請參考 `requirements.txt`。
+- [MediaPipe Face Landmarker 模型](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker)
+- [MediaPipe Face Landmarker 模型說明文件](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker#models)
 
 ## 注意事項
 
