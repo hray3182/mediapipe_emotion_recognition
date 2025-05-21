@@ -1,0 +1,14 @@
+dataset/
+
+.venv/
+
+models/
+
+*.task
+
+*.csv
+
+.vscode/
+
+*.txt
+
